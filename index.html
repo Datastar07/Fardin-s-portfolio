@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fardin's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/84076c2323.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo_3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI/ML Developer</p>
+                <h1>Hi, I'm <span>Fardin</span><br> Multani From Ahmedabad</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        At the beginning of 2022, I didn't know where my life was going. After some serious
+                        self-reflection about my passions and interests, I committed to learning everything I could
+                        about machine learning, data science, and the tech industry.
+                        <br>
+                        After graduating woth a B.Tech in Information Technology from Ahmedabad and a year of working at
+                        Kshatra Info. Tech pvt Ltd, I have officially become a A.I./ML Developer at Kshatra Info Tech.
+                        Here I am utilizing my knowledge of machine learning engineering to build intelligent systems to
+                        better the customer experience.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Web Development,Programming,Scripting</li>
+                            <li><span>Machine Learning and Deep Learning</span><br>Data Modelling,Automation</li>
+                            <li><span>Tableau/Power B.I.</span><br>Data Analysis/Visulization</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jul 2023- Current</span><br>AI/ML Developer at Kshatra Infotech Pvt Ltd.</li>
+                            <li><span>Feb 2023- Jul 2023</span><br>Data Science Intern at Rapidops Solutions Pvt Ltd.
+                            </li>
+                            <li><span>Jun 2022- Jul 2022</span><br>Python Developer Intern at Akash Technolabs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Completed B.Tech(I.T.) with First-class honors and Distinction.
+                            </li>
+                            <li><span>2019</span><br>Completed 12th at Ultra-Education Acedemy with distinction.</li>
+                            <li><span>2017</span><br>Completed 10th at Dayamayi Mata School with distinction.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine / Deep Learning</h2>
+                    <p>Proficient in machine learning and deep learning frameworks such as Scikit-Learn, OpenCV,
+                        TensorFlow, Keras, PyTorch, and XGBoost. Possess extensive knowledge of diverse machine learning
+                        algorithms. Experienced in implementing various deep neural network architectures for tasks such
+                        as object detection and segmentation. Familiarity with a range of models and techniques enhances
+                        versatility in addressing complex challenges within the realm of artificial intelligence and
+                        data science.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>In Python,My expertise are:
+                        <br>
+                    <ul>
+                        <li type="1"> Analysis and Visualization:</li>
+                        <ul>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                            <li>Plotly</li>
+                        </ul>
+                        <br>
+                        <li type="1">Database Access:</li>
+                        <ul>
+                            <li>SQLAlchemy</li>
+                        </ul>
+                        <br>
+                        <li type="1">Web Scraping:</li>
+                        <ul>
+                            <li>BeautifulSoup</li>
+                            <li>Scrapy</li>
+                        </ul>
+                        <br>
+                        <li type="1">Deployment and Orchestration:</li>
+                        <ul>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                        </ul>
+                    </ul>
+                    </p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>NLP(Natureal Language Processing)</h2>
+                    <p>Experienced in NLP, I specialize in building text-based models using advanced architectures like
+                        RNNs, LSTMs, and GRUs. Proficient in SpaCy and Gensim, I apply these tools for tasks such as
+                        sentiment analysis and text generation, delivering effective solutions at the intersection of
+                        theory and practical implementation in NLP.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Automated Railway Announcement System</h3>
+                        <p>This is an automated software which will generate the Railway Station Announcement in Hindi,
+                            English and Gujarati by maintaining a database of required information in an excel sheet.
+                        </p>
+                        <a href="https://github.com/Datastar07/Railway-Announcement-system" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Fashion Recommendation System</h3>
+                        <p>This is a fashion Recommender system using deep learning and Nearest neighbour algorithm.</p>
+                        <a href="https://github.com/Datastar07/Fashion_Recommander_System" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>AI-Assisted-Subway-Surefers-Game</h3>
+                        <p>Playing the subway surfers game using the A.I.🤖🧠</p>
+                        <a href="https://github.com/Datastar07/Subway-suffer-Game-using-AI" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png">
+                    <div class="layer">
+                        <h3>Image-Processing project</h3>
+                        <p>Using the python-opencv library we are detecting the orange and blue object from the video
+                            frame and find the distance between them using the opencv library.</p>
+                        <a href="https://github.com/Datastar07/Image-Processing-Project-Opencv" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.png">
+                    <div class="layer">
+                        <h3>Student Score Prediction using machine Learning</h3>
+                        <p>About
+                            It is a simple machine lerning project for predicting the student score based on the past
+                            labelled data.</p>
+                        <a href="https://github.com/fardinkhan1003/Prediction-using-Supervised-ML"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------see more button------------------------- -->
+            <!-- <a id="myButton" class="btn" onclick="hideButton()">See more</a>
+        <div id="specificContent" class="hidden">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-4.png">
+                    <div class="layer">
+                        <h3>Image-Processing project</h3>
+                        <p>This this the 1st application for the image classification and solving the regression problem and do whatwver things.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.png">
+                    <div class="layer">
+                        <h3>Student Score Prediction</h3>
+                        <p>This this the 1st application for the image classification and solving the regression problem and do whatwver things.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.png">
+                    <div class="layer">
+                        <h3>Student Score Prediction</h3>
+                        <p>This this the 1st application for the image classification and solving the regression problem and do whatwver things.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        </div>
+    </div>
+    <!-- --------------------contact--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>fardinmultani07@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i>+91-9510329464</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/f.mulatani" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/fardin_khan_777/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/fardin-multani-6827a3235/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Datastar07" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Fardin Multani CV.pdf" download target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Fardin. Made With <i class="fa-solid fa-heart"></i> by Professional Way</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+        function hideButton() {
+            var button = document.getElementById("myButton");
+            var content = document.getElementById("specificContent");
+
+            button.classList.toggle("hidden");
+            content.classList.toggle("hidden");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxJk9zltVzhiECPVZpHUr1SgcL1apj3hgyiudVik9IwxPDmFtTlUtmwgsupy98In00/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!✅"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
